@@ -1,6 +1,7 @@
 **●reset**
 
 **通常コミットの取り消し**
+
 以下では例として`テストコミット04`を取り消す
 ![image](https://github.com/user-attachments/assets/77be286e-f7e0-4459-9754-f44c045f6179)
 
@@ -39,6 +40,7 @@
 **●revert**
 
 **取り消したコミットの履歴を残したい場合**
+
 以下は、テストコミット07を取り消す例
 
 ![image](https://github.com/user-attachments/assets/dc0e9a87-d50a-4aaf-9fc0-e44b3c47b975)
