@@ -120,7 +120,20 @@ public class UserService {
 リポジトリクラスが不要な場合
   - リポジトリクラスと Mapper インターフェースが 1 対 1 となるとき
   - リポジトリクラスが Mapper の単純なラッパーにしかなっていないとき
+```
+@Service
+public class UserService {
+    private final UserMapper userMapper;
 
+    public UserService(UserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
+
+    public User getUserById(Long id) {
+        return userMapper.findById(id);
+    }
+}
+```
 リポジトリクラスが必要な場合
   - 複数のデータソースを統合する
   - SQL クエリの前処理・後処理が必要
