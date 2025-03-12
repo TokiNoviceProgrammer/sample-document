@@ -3,6 +3,7 @@
 **通常コミットの取り消し**
 
 以下では例として`テストコミット04`を取り消す
+
 ![image](https://github.com/user-attachments/assets/77be286e-f7e0-4459-9754-f44c045f6179)
 
 `git reset --hard HEAD^`を実行→ローカルブランチが1つ前のコミットに戻る
